@@ -11,9 +11,9 @@ class User {
   }
 
   set fullName(newFullName) {
-    let fullName = newFullName.split(" ");
-    this.firstName = fullName[0];
-    this.lastName = fullName[1];
+    let [first, last] = newFullName.split(" ");
+    this.firstName = first;
+    this.lastName = last;
     // this.fullName = newFullName;
     console.log(this.firstName, this.lastName);
   }
